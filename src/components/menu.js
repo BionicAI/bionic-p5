@@ -1,28 +1,22 @@
 import React from "react"
 import menuStyles from "./menu.module.scss"
 
-export default () => (
+export default props => (
   <div className={menuStyles.menu}>
 
-    <div>
     <ul>
-      <li>Enterprise Search</li>
+      <li className={menuStyles.current}>Enterprise Search</li>
     </ul>
-    </div>
 
-    <div>
     <ul>
-      <li>Anti-Money Laundry (beta)</li>
+      <li>Anti-Money Laundry</li>
       <li>Native App Search</li>
-      <li>Data Quality Assistant (beta)</li>
+      <li>Data Quality Assistant</li>
     </ul>
-    </div>
 
-  <div>
-    <ul>
+    <ul className={menuStyles.contact}>
       <li>Contact sales</li>
     </ul>
-  </div>
 
   </div>
 )

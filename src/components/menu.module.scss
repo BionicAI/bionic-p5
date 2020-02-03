@@ -1,15 +1,30 @@
 .menu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: Regular;
+    font-size: 20px;
+    color: #04102E;
+    width: 50%;
     margin-top: -50px;
-    padding-bottom: 30px;
     margin-left: 50%;
-    div {
-        float: left;
-    }
+    height: auto;
     ul {
-        color: blue;
-        float: left;
+        margin-top: 0px;
+        display: inline-block;
+        width: 33%;
+        list-style: none;
+        vertical-align:top;
         li {
-            width: 200px;
+            margin-bottom: 10px;
         }
+        li:last-child {
+            margin-bottom: 0px;
+        }
+        .current {
+            font-weight: bold;
+        }
+    }
+    .contact {
+        text-align: right;
+        color: #062E95;
     }
 }

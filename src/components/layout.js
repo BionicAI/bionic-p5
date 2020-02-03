@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
+
 // import favicon from '../../assets/img/favicon.ico'
 import './layout.scss'
 

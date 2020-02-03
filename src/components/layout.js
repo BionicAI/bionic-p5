@@ -2,12 +2,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 // import favicon from '../../assets/img/favicon.ico'
-import './layout.css'
+import './layout.scss'
 
 const Layout = ({ children }) => (
   <>
     <Helmet>
-      <title>p5.js starter</title>
+      <title>Bionic</title>
       <meta name="description" content="A starter for Gatsby.js with p5.js" />
       {/* <link rel="icon" href={favicon} /> */}
     </Helmet>

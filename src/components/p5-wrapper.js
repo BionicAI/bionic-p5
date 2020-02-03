@@ -22,7 +22,7 @@ function P5Wrapper(props) {
     exposeSketchCustomProps(p5Instance.customProps)
   }, [])
 
-  return <div ref={p5Wrapper} />
+  return <div class="p5div" ref={p5Wrapper} />
 }
 
 export default P5Wrapper

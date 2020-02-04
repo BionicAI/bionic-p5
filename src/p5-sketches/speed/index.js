@@ -4,7 +4,7 @@ export default function sketch(p) {
 
 
     p.setup = function() {
-      p.createCanvas((p.windowWidth -150) / 2, 400, p.WEBGL)
+      p.createCanvas(p.windowWidth, 400, p.WEBGL)
       p.smooth()
       p.background(0,10,30)
       p.frameRate(60)
@@ -24,7 +24,7 @@ export default function sketch(p) {
           this.height = p.random(1,3);
           this.randomNumber = p.random();
           if (this.randomNumber > 0.8){
-            this.speed = p.random(50,100);
+            this.speed = p.random(50,200);
             this.color = p.color(0,0,255);
           } else {
             this.speed = p.random(5,10);
@@ -54,7 +54,7 @@ export default function sketch(p) {
   
     p.draw = function() {
         p.translate(-p.width/2,-p.height/2,0)
-      p.background(248);
+      p.background(255);
       p.noStroke();
     
       for(let i = 0; i < stripes.length; i++){
@@ -64,7 +64,7 @@ export default function sketch(p) {
     }
 
     p.windowResized = function() {
-        p.resizeCanvas((p.windowWidth -150) / 2, 400);
+        p.resizeCanvas((p.windowWidth), 400);
       }
   }
   

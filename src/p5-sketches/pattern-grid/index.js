@@ -4,13 +4,15 @@ export default function sketch(p) {
     p.setup = function() {
       //p.createCanvas(p.windowWidth, p.windowHeight)
       canvas = p.createCanvas(p.windowWidth - 60, 800)
-      canvas.position(30,150)
-      p.background(125)
+      canvas.position(30,144)
+      p.background(255)
       canvas.style('z-index', '-1')
+      p.fill(0)
+      //p.rect(0, 0, 9, 9)
     }
   
     p.draw = function() {
-        p.background(255);  
+        //p.background(255);  
         p.stroke(236);
         p.strokeWeight(1);
         /*

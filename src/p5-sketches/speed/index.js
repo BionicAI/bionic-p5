@@ -4,7 +4,7 @@ export default function sketch(p) {
 
 
     p.setup = function() {
-      p.createCanvas(p.windowWidth, 400, p.WEBGL)
+      p.createCanvas(p.windowWidth, 400)
       p.smooth()
       p.background(0,10,30)
       p.frameRate(60)
@@ -53,7 +53,7 @@ export default function sketch(p) {
       }
   
     p.draw = function() {
-        p.translate(-p.width/2,-p.height/2,0)
+        //p.translate(-p.width/2,-p.height/2,0)
       p.background(255);
       p.noStroke();
     

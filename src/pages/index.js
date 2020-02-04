@@ -14,9 +14,9 @@ import TestSketch from '../p5-sketches/test-sketch'
 import BionicLogo from '../p5-sketches/bionic-logo'
 import PatternGrid from '../p5-sketches/pattern-grid'
 import Relevance from '../p5-sketches/relevance'
+import Speed from '../p5-sketches/speed'
 
 const P5Wrapper = Loadable(() => import('../components/p5-wrapper'))
-//const BionicLogo = Loadable(() => import('../p5-sketches/bionic-logo'))
 
 export default () => (
   <>
@@ -35,6 +35,15 @@ export default () => (
       headerText="Unique algorithms for unmatched search relevance"
       sketch={Relevance}
     />
+    <Container
+      headerText="Extermely fast indexing and searching"
+      backgroundClr="#EFEFEF"
+      headerClr="black"
+      floatSketch="left"
+      sketch={Speed}
+    >
+      <p>Her kan jeg skrive noe faenskap om hvor raskt vi kan søke og indeksere. Skikkelig raskt</p>
+    </Container>
 
 
 

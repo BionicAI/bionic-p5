@@ -9,5 +9,5 @@ export default (props) => (
       marginTop: 120,
       textAlign: `${props.align}`
   }}
-  >{props.text}</h1>
+>{props.text} {props.margin}</h1>
 )

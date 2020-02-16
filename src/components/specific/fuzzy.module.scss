@@ -1,0 +1,69 @@
+.fuzzy {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+
+    h1 {
+        color: white;
+        font-family: "ChronicleG1";
+        font-size: 40px;
+        margin-bottom: 60px;
+        max-width: 800px;
+    }
+    h2 {
+        color: white;
+        font-family: "ChronicleG1";
+        font-size: 30px;
+        margin-bottom: 60px;
+        max-width: 800px;
+    }
+    p {
+        color: white;
+        opacity: 0.75;
+        max-width: 800px;
+    }
+    .split {
+        width: 50%;
+        padding: 60px;
+        padding-top: 80px;
+        padding-left: 0px;
+
+
+        .featureSection {
+            max-width: 800px;
+            margin-top: 120px;
+            .feature {
+                margin-top: 30px;
+                display: flex;
+                justify-self: flex-start;
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                h3 {
+                    font-weight: bold;
+                    width: 50%;
+                    color: white;
+                    padding-right: 10px;
+                }
+
+                p {
+                    opacity: 1.0; 
+                    width: 50%;
+                } 
+
+            } // feature
+        } // feature section
+    } // split
+
+    @media (max-width: 768px) {
+    display: inline;
+        .split {
+            padding: 20px;
+            width: 100%;
+            background-color: red;
+        } // split mq
+    } // media q
+} // fuzzy

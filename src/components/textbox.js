@@ -6,6 +6,7 @@ export default props => (
     className={styles.textbox} 
     style={{
         background: `${props.backgroundClr}`,
+        color: `${props.color}`,
         padding: `${props.padding}`
     }}>
 

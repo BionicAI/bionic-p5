@@ -10,7 +10,7 @@ export default function sketch(p) {
 
     p.setup = function() {
       //p.createCanvas(p.windowWidth, p.windowHeight)
-      p.createCanvas((p.windowWidth -150) / 2, 400)
+      p.checkCanvas(p.windowWidth)
       p.smooth()
       p.background(0,10,30)
       p.frameRate(60)
@@ -119,7 +119,20 @@ export default function sketch(p) {
     }
 
     p.windowResized = function() {
-        p.resizeCanvas((p.windowWidth -150) / 2, 400);
+        p.checkCanvas(p.windowWidth);
       }
+
+    p.checkCanvas = function(w) {
+      if(w > 1024) {
+        p.resizeCanvas((w -150) / 2, 400);
+        console.log("works");
+      }
+      if(w < 1024 && w > 480){
+        p.resizeCanvas((w - 60) / 2, 400);
+      }
+      if(w < 480){
+        p.resizeCanvas(w - 60, 400);
+      }
+    }
   }
   

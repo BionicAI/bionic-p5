@@ -5,14 +5,17 @@ import styled from 'styled-components'
 import Header from "../components/header"
 import Menu from "../components/menu"
 import Container from "../components/container"
+import Footer from "../components/footer"
 
 // Minor Components
 import Soloheading from "../components/soloheading"
 import Textbox from "../components/textbox"
 
 // Specific Components
-import MainContainer from "../components/specific/maincontainer"
+import MainContainer from "../components/maincontainer"
 import Fuzzy from "../components/specific/fuzzy"
+import Features from "../components/specific/features"
+import ComparisonTable from "../components/specific/comparisonTable"
 
 // Load p5 safe
 import Loadable from "@loadable/component"
@@ -31,9 +34,11 @@ export default () => (
       <P5Wrapper sketch={BionicLogo} />
       <Menu />
     </Header>
+
     {/* Not needed yet
     <P5Wrapper sketch={PatternGrid} />
     */}
+
     <MainContainer 
       alternateText="-> Enterprise Search"
       headerText="Search with exceptional relevance and performance" 
@@ -46,15 +51,11 @@ export default () => (
     >
       <p style={{color: "white"}}>
         Bionic takes on a fundamentally different approach to searching, with Neural Network Vector models.
-        <br/><br/>
-        Outperforms its competition. Does not make choices on behalf of the user.
-        <br/><br/>
-        Supports severe spelling errors.
       </p>
       </Container>
 
 
-    <Soloheading align="right" text="Extremely fast indexing and searching"/>
+    <Soloheading align="right" text="Incredible index and response time"/>
 
     <P5Wrapper sketch={Speed} />
     <Textbox>
@@ -64,8 +65,14 @@ export default () => (
       <p>1ms response time on a single instance</p>
     </Textbox>
 
+
     <Fuzzy />
 
+    <Features />
+
+    <ComparisonTable />
+
+    <Footer />
 
   </>
   

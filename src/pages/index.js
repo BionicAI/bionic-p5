@@ -55,7 +55,7 @@ export default () => (
       </Container>
 
 
-    <Soloheading align="right" text="Incredible index and response time"/>
+    <Soloheading flex="flex-end" text="Incredible index and response time"/>
 
     <P5Wrapper sketch={Speed} />
     <Textbox>
@@ -64,7 +64,6 @@ export default () => (
       <p>1.5 million entries indexes in ~20 seconds</p>
       <p>1ms response time on a single instance</p>
     </Textbox>
-
 
     <Fuzzy />
 

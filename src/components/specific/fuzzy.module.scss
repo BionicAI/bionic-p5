@@ -3,6 +3,10 @@
     justify-content: flex-start;
     min-height: 100vh;
 
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+
     h1 {
         color: white;
         font-family: "ChronicleG1";
@@ -27,6 +31,11 @@
         padding: 60px;
         padding-top: 80px;
         padding-left: 0px;
+
+        @media (max-width: 768px) {
+            padding: 20px;
+            width: 100%;
+        }
 
 
         .featureSection {
@@ -57,13 +66,4 @@
             } // feature
         } // feature section
     } // split
-
-    @media (max-width: 768px) {
-    display: inline;
-        .split {
-            padding: 20px;
-            width: 100%;
-            background-color: red;
-        } // split mq
-    } // media q
 } // fuzzy

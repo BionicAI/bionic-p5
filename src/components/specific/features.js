@@ -35,25 +35,23 @@ export default props => (
                 <h1>Features</h1>
 
                 <Feature>Easy to use</Feature>
+                <Feature>Highly configurable</Feature>
                 <Feature>Can run in the browser</Feature>
+                <Feature> &lt; 1 MB footprint</Feature>
                 <Feature>GDPR compliant</Feature>
+                <Feature>Single file installation</Feature>
                 <Feature>Multi-platform</Feature>
-                <Feature>Easy to use</Feature>
-                <Feature>Can run in the browser</Feature>
-                <Feature>GDPR compliant</Feature>
-                <Feature>Multi-platform</Feature>
-                <Feature>Easy to use</Feature>
-                <Feature>Can run in the browser</Feature>
-                <Feature>GDPR compliant</Feature>
-                <Feature>Multi-platform</Feature>
-                <Feature>Easy to use</Feature>
-                <Feature>Can run in the browser</Feature>
-                <Feature>GDPR compliant</Feature>
-                <Feature>Multi-platform</Feature>
-                <Feature>Easy to use</Feature>
-                <Feature>Can run in the browser</Feature>
-                <Feature>GDPR compliant</Feature>
-                <Feature>Multi-platform</Feature>
+                <Feature>True autocomplete</Feature>
+                <Feature>Linear-scaling</Feature>
+                <Feature>Inverted search</Feature>
+                <Feature>Multi-facet search</Feature>
+                <Feature>Duplication control</Feature>
+                <Feature>Unicode</Feature>
+                <Feature>RESTful API</Feature>
+                <Feature>No error limits</Feature>
+                <Feature>Foreign key support</Feature>
+                <Feature>Asynchronous indexing</Feature>
+                <Feature>Personalisation</Feature>
 
             </Split>
 

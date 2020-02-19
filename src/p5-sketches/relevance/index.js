@@ -118,6 +118,21 @@ export default function sketch(p) {
       }
     }
 
+    p.touchMoved = function() {
+      if((p.mouseX > 0 && p.mouseX < p.width) && (p.mouseY > 0 && p.mouseY < p.height)){
+        midhoriz = p.mouseX
+        midvert = p.mouseY
+      } else {
+        midvert = p.height / 2
+        midhoriz = p.width / 2
+      }
+    }
+
+    p.touchEnded = function() {
+      midvert = p.height / 2
+      midhoriz = p.width / 2
+    }
+
     p.windowResized = function() {
         p.checkCanvas(p.windowWidth);
       }
@@ -127,12 +142,17 @@ export default function sketch(p) {
         p.resizeCanvas((w -150) / 2, 400);
         console.log("works");
       }
-      if(w < 1024 && w > 480){
+      if(w <= 1024 && w > 768){
         p.resizeCanvas((w - 60) / 2, 400);
       }
-      if(w < 480){
-        p.resizeCanvas(w - 60, 400);
+      if(w <= 768 && w > 480){
+        p.resizeCanvas((w - 40) / 2, 400);
       }
+      if(w <= 480){
+        p.resizeCanvas(w - 40, 400);
+      }
+      midvert = p.height / 2
+      midhoriz = p.width / 2
     }
   }
   

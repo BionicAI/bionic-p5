@@ -2,12 +2,7 @@ import React from "react"
 import styles from "./soloheading.module.scss"
 
 export default (props) => (
-  <h1 
-  className={styles.header}
-  style={{
-      float: `${props.align}`,
-      marginTop: 120,
-      textAlign: `${props.align}`
-  }}
->{props.text} {props.margin}</h1>
+  <div className={styles.header} style={{justifyContent: `${props.flex}`}}>
+    <h1>{props.text}</h1>
+  </div>
 )

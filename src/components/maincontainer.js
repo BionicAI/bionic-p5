@@ -7,6 +7,7 @@ export default props => (
         <div className={styles.textbox}>
             <h1>{props.headerText}</h1>
             <h2>{props.subHeaderText}</h2>
+            {props.children}
         </div>
     </div>
 )

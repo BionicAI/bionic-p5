@@ -10,6 +10,6 @@ export default props => (
     <div className={styles.footer}>
         <P5Wrapper sketch={BionicLogo} />
         <p>Oslo, Norway</p>
-        <a href="#">Contact sales</a>
+        <a href="/contact">Contact sales</a>
     </div>
 )

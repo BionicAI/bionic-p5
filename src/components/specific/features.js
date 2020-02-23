@@ -26,7 +26,7 @@ export default props => (
 
         <IntroField>
             <h2>Learn more about Bionic Enterprise Search</h2>
-            <a href="#">Schedule a demo</a>
+            <a href="/contact">Schedule a demo</a>
         </IntroField>
 
         <SplitSection>

@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 // Major Components
 import Header from "../components/header"
-import Menu from "../components/menu"
+import Menu from "../components/menu/menu"
+import MainContainer from "../components/maincontainer"
 import Container from "../components/container"
 import Footer from "../components/footer"
 
@@ -12,10 +13,10 @@ import Soloheading from "../components/soloheading"
 import Textbox from "../components/textbox"
 
 // Specific Components
-import MainContainer from "../components/maincontainer"
 import Fuzzy from "../components/specific/fuzzy"
 import Features from "../components/specific/features"
 import ComparisonTable from "../components/specific/comparisonTable"
+import Demo from "../components/specific/demo"
 
 // Load p5 safe
 import Loadable from "@loadable/component"
@@ -26,12 +27,14 @@ import PatternGrid from '../p5-sketches/pattern-grid'
 import Relevance from '../p5-sketches/relevance'
 import Speed from '../p5-sketches/speed'
 
-const P5Wrapper = Loadable(() => import('../components/p5-wrapper'))
-
+const P5Wrapper = Loadable(() => import('../components/p5-wrapper')) //required
 export default () => (
   <>
     <Header>
-      <P5Wrapper sketch={BionicLogo} />
+      <a href="#">
+        <P5Wrapper sketch={BionicLogo} />
+      </a>
+      
       <Menu />
     </Header>
 
@@ -64,12 +67,15 @@ export default () => (
       <p>1.5 million entries indexes in ~20 seconds</p>
       <p>1ms response time on a single instance</p>
     </Textbox>
+    
 
     <Fuzzy />
 
     <Features />
 
     <ComparisonTable />
+
+    <Demo />
 
     <Footer />
 

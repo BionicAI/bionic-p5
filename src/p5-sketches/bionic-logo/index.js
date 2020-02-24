@@ -11,6 +11,12 @@ export default function mysketch(p) {
   let screenlogo
 
   let bString, iString, oString, nString, cString
+  let bionicStrings = Array(2)
+  let charPositions = []
+  let randomFonts = []
+  let textChars = []
+  let textHeight
+  let logo
 
   p.preload = function(){
     reg = p.loadFont('/static/reg-27b93a163e1b08ebf79f909765b7582e.otf')
@@ -20,8 +26,19 @@ export default function mysketch(p) {
   }
   p.setup = function() {
     p.createCanvas(150, 44)
-    p.frameRate(1)
-    p.smooth()
+    p.frameRate(60)
+
+    bString = ['B', 'B']
+    iString = ['i', 'ï', 'í', 'ĭ', 'ì', 'î', 'ĩ', 'ī', 'į', 'y']
+    oString = ['o','ò','ó','ô','õ','ö', 'ō','ō','ŏ','ő', 'ø']
+    nString = ['n','ñ', 'ń', 'ņ', 'ň']
+    cString = ['c','ç','ć','ĉ','ċ','č','k']
+
+    bionicStrings = [bString, iString, oString, nString, iString, cString]
+    charPositions = [50, 65, 80, 100, 115, 130]
+    textHeight = p.height/2 - 2
+
+    p.calcSetup() //important on first load
   }
 
   p.getMarkovChar = function(arr) {
@@ -37,18 +54,29 @@ export default function mysketch(p) {
     let threshold = 0.8
     let passThreshold = p.random()
     if(passThreshold > threshold) {
-      return (p.textFont(screen))
+      return (screen)
     } else {
-      return (p.textFont(reg))
+      return (reg)
     }
   }
   p.getMarkovLogo = function() {
-      let threshold = 0.8
+    let threshold = 0.8
     let passThreshold = p.random()
     if(passThreshold > threshold) {
-      p.image(screenlogo, 0, 20 - 18, 40, 40)
+      return screenlogo
     } else {
-      p.image(reglogo, 0, 20 - 18, 40, 40)
+      return reglogo
+    }
+    
+  }
+
+  p.calcSetup = function() {
+    
+    logo = p.getMarkovLogo()
+
+    for (let i = 0; i < bionicStrings.length; i++){
+      randomFonts[i] = p.getMarkovFont()
+      textChars[i] = p.getMarkovChar(bionicStrings[i])
     }
     
   }
@@ -57,35 +85,18 @@ export default function mysketch(p) {
     p.background(255)
     p.fill(0)
 
+    p.image(logo, -5, 20 - 18, 40, 40)
+
     p.textSize(35)
     p.textAlign(p.CENTER, p.CENTER)
 
-    p.getMarkovLogo()
-
-    bString = ['B']
-    iString = ['i', 'ï', 'í', 'ĭ', 'ì', 'î', 'ĩ', 'ī', 'į', 'y']
-    oString = ['o','ò','ó','ô','õ','ö', 'ō','ō','ŏ','ő', 'ø']
-    nString = ['n','ñ', 'ń', 'ņ', 'ň']
-    cString = ['c','ç','ć','ĉ','ċ','č','k']
-
-    let textHeight = p.height/2 - 2
-
-    p.getMarkovFont()
-    p.text(bString[0], 55, textHeight)
-
-    p.getMarkovFont()
-    p.text(iString[p.getMarkovChar(iString)], 70, textHeight)
-
-    p.getMarkovFont()
-    p.text(oString[p.getMarkovChar(oString)], 85, textHeight)
-
-    p.getMarkovFont()
-    p.text(nString[p.getMarkovChar(nString)], 105, textHeight)
-
-    p.getMarkovFont()
-    p.text(iString[p.getMarkovChar(iString)], 120, textHeight)
-
-    p.getMarkovFont()
-    p.text(cString[p.getMarkovChar(cString)], 135, textHeight)
+    for (let i = 0; i < bionicStrings.length; i++){
+      p.textFont(randomFonts[i])
+      p.text(bionicStrings[i][textChars[i]], charPositions[i], textHeight)
+    }
+    
+    if (p.frameCount % 60 == 0) {
+      p.calcSetup()
+    }
   }
 }

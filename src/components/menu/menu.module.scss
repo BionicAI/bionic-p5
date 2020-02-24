@@ -67,6 +67,7 @@
     height: 0px;
     width: 100%;
     visibility: hidden;
+    transition: margin-top 0.3s;
     ul {
         margin-bottom: 10px;
         li {
@@ -86,9 +87,8 @@
         .toggle {
             visibility: visible;       
         }
-        transition: margin-top 0.3s;
     }
 }
 .active {
-    margin-top: auto;
+    margin-top: 0px;
 }

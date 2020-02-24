@@ -3,7 +3,6 @@ import React from 'react'
 // Major Components
 import Header from "../components/header"
 import Menu from "../components/menu/menu"
-
 import Footer from "../components/footer"
 
 // Minor Components
@@ -12,7 +11,7 @@ import Textbox from "../components/textbox"
 import MainContainer from "../components/maincontainer"
 
 // Specific Components
-import ContactForm from "../components/specific/contact-form"
+import Demo from "../components/specific/demo"
 
 // Load p5 safe
 import Loadable from "@loadable/component"
@@ -34,13 +33,13 @@ export default () => (
         </Header>
 
         <MainContainer 
-        alternateText="-> Get in touch"
-        headerText="Find out how Bionic can help grow your business" 
-        subHeaderText="Our team is happy to give you a demo. Fill out the form below to reach us."
+        alternateText="-> Anti Money Laundry"
+        headerText="Extreme fault tolerance name search" 
+        subHeaderText="Bionic Anti Money Laundry comes pre-indexed with international sanctions lists"
         >
-            <ContactForm />
         </MainContainer>  
-        
+
+        <Demo />
 
         <Footer />
   

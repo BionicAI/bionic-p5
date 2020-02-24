@@ -19,15 +19,35 @@
         align-items: center;
         flex-direction: column;
         height: 30vh;
+        @media (max-width: 480px){
+            height: 25vh;
+        }
 
         a {
             margin: 0 auto;
             color: #0076FF;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 48px;
+            font-size: 32px;
             text-decoration: none;
             &:hover {
                 color: white;
+            }
+            padding: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: 1px solid #0076FF;
+            border-radius: 50px;
+            @media (max-width: 768px){
+                padding: 20px;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 24px;
+            }
+            @media (max-width: 480px){
+                padding: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 16px;
             }
         }
     }

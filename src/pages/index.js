@@ -31,10 +31,13 @@ const P5Wrapper = Loadable(() => import('../components/p5-wrapper')) //required
 export default () => (
   <>
     <Header>
-      <a href="#">
-        <P5Wrapper sketch={BionicLogo} />
-      </a>
-      
+      <Menu mobilemenu={true} />
+      <div style={{width: "150px", height: "48px"}}>
+        <a href="/">
+          <div id="p5_loading" style={{width: "150px", height: "48px"}} class="loadingclass"></div> {/* Remove loading screen */}
+          <P5Wrapper sketch={BionicLogo} />
+        </a>
+      </div>
       <Menu />
     </Header>
 

@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./comparisonTable.module.scss"
+import { Table } from "p5"
 
 const Spec = props => (
     <div className={styles.spec}>{props.children}</div>
@@ -35,6 +36,23 @@ export default props => (
             </SpecBox>
 
         </Spec>
+
+        <table>
+            <tr>
+                <td></td>
+                <td>Bionic</td>
+                <td>Solr</td>
+                <td>Elastic</td>
+                <td>Algolia</td>
+            </tr>
+            <tr>
+                <td>Installation size</td>
+                <td>500 KB</td>
+                <td>73 MB</td>
+                <td>32 MB</td>
+                <td>Cloud only</td>
+            </tr>
+        </table>
         
 
     </div>

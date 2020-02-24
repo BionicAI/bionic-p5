@@ -12,7 +12,6 @@ export default function sketch(p) {
       //p.createCanvas(p.windowWidth, p.windowHeight)
       p.checkCanvas(p.windowWidth)
       p.smooth()
-      p.background(0,10,30)
       p.frameRate(60)
 
       p.createPoints()
@@ -26,17 +25,17 @@ export default function sketch(p) {
     p.createPoints = function() {
       pointCollection = []
       for (let i = 0; i < num; i++){
-        let org = p.createVector(p.random(edge, p.width-edge), p.random(edge, p.height-edge));
-        let radius = p.random(20, 60);
-        let loc = p.createVector(org.x+radius, org.y);
-        let offSet = p.random(p.TWO_PI);
-        let dir = 1;
-        let r = p.random(1);
+        let org = p.createVector(p.random(edge, p.width-edge), p.random(edge, p.height-edge)) 
+        let radius = p.random(20, 60) 
+        let loc = p.createVector(org.x+radius, org.y) 
+        let offSet = p.random(p.TWO_PI) 
+        let dir = 1 
+        let r = p.random(1) 
         if (r>.5) {
-          dir =-1;
+          dir =-1 
         }
-        let makePoint = new Point(org, loc, radius, dir, offSet);
-        pointCollection[i] = makePoint;
+        let makePoint = new Point(org, loc, radius, dir, offSet) 
+        pointCollection[i] = makePoint 
       }
     }
 
@@ -44,39 +43,43 @@ export default function sketch(p) {
 
       constructor(_org, _loc, _radius, _dir, _offSet) {
         this.org = _org
-        this.loc = _loc;
-        this.sz = 5;
-        this.theta = 0;
-        this.radius = _radius;
-        this.offSet = _offSet;
+        this.loc = _loc 
+        this.sz = 5 
+        this.theta = 0 
+        this.radius = _radius 
+        this.offSet = _offSet 
         this.dir = _dir
-        this.d = 30;
+        this.d = 30 
       }
       display = () => {
         for (let i=0; i<5; i++) {
-          p.ellipse(this.loc.x, this.loc.y, this.sz-2*i, this.sz-2*i);
+          p.strokeWeight(this.sz)
+          p.point(this.loc.x, this.loc.y)
+          //p.ellipse(this.loc.x, this.loc.y, this.sz, this.sz) 
         }
       }
       move = () => {
-        this.loc.x = this.org.x + p.sin(this.theta+this.offSet)*this.radius;
-        this.loc.y = this.org.y + p.cos(this.theta+this.offSet)*this.radius;
-        this.theta += (0.04/3*this.dir);
+        this.loc.x = this.org.x + p.sin(this.theta+this.offSet)*this.radius 
+        this.loc.y = this.org.y + p.cos(this.theta+this.offSet)*this.radius 
+        this.theta += (0.04/3*this.dir) 
       }
       line = () => {
         for (let i=0; i<pointCollection.length; i++) { 
-          let other = pointCollection[i];
-          var distance = this.loc.dist(other.loc);
-          var mousedist = p.dist(this.loc.x, this.loc.y, midhoriz, midvert);
+          let other = pointCollection[i] 
+          var distance = this.loc.dist(other.loc) 
+          var mousedist = p.dist(this.loc.x, this.loc.y, midhoriz, midvert) 
+
+          p.strokeWeight(1)
           
           // mouse line
           if (mousedist > 0 && mousedist < this.d * 4){
-            p.stroke(255,255,255);
-            p.line(this.loc.x, this.loc.y, midhoriz, midvert);
+            p.stroke(255,255,255) 
+            p.line(this.loc.x, this.loc.y, midhoriz, midvert) 
           }
           // between line
           if (distance >0 && distance < this.d) {
-            p.stroke(255,255,255,100);
-            p.line(this.loc.x, this.loc.y, other.loc.x, other.loc.y);
+            p.stroke(255,255,255,100) 
+            p.line(this.loc.x, this.loc.y, other.loc.x, other.loc.y) 
           }
         }
       }
@@ -134,22 +137,21 @@ export default function sketch(p) {
     }
 
     p.windowResized = function() {
-        p.checkCanvas(p.windowWidth);
+        p.checkCanvas(p.windowWidth) 
       }
 
     p.checkCanvas = function(w) {
       if(w > 1024) {
-        p.resizeCanvas((w -150) / 2, 400);
-        console.log("works");
+        p.resizeCanvas((w -150) / 2, 400) 
       }
       if(w <= 1024 && w > 768){
-        p.resizeCanvas((w - 60) / 2, 400);
+        p.resizeCanvas((w - 60) / 2, 400) 
       }
       if(w <= 768 && w > 480){
-        p.resizeCanvas((w - 40) / 2, 400);
+        p.resizeCanvas((w - 40) / 2, 400) 
       }
       if(w <= 480){
-        p.resizeCanvas(w - 40, 400);
+        p.resizeCanvas(w - 40, 400) 
       }
       midvert = p.height / 2
       midhoriz = p.width / 2

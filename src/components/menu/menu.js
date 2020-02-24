@@ -8,11 +8,12 @@ export default function Menu(props){
 
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded)
+    console.log(isExpanded)
   }
 
   return (
   <div 
-    className={[menuStyles.menu, props.mobilemenu ? menuStyles.mobile : "", props.isExpanded ? menuStyles.active : ""].join(" ")}
+    className={[menuStyles.menu, props.mobilemenu ? menuStyles.mobile : " ", isExpanded ? menuStyles.active : " "].join(" ")}
   >
 
     <ul>
@@ -20,9 +21,9 @@ export default function Menu(props){
     </ul>
 
     <ul>
-      <li><Link to="/404" activeClassName={menuStyles.current}>Anti-Money Laundry</Link></li>
-      <li><Link to="/404" activeClassName={menuStyles.current}>Native App Search</Link></li>
-      <li><Link to="/404" activeClassName={menuStyles.current}>Data Quality Assistant</Link></li>
+      <li><Link to="/anti-money-laundry" activeClassName={menuStyles.current}>Anti-Money Laundry</Link></li>
+      <li><Link to="/native-app-search" activeClassName={menuStyles.current}>Native App Search</Link></li>
+      <li><Link to="/data-quality-assistant" activeClassName={menuStyles.current}>Data Quality Assistant</Link></li>
     </ul>
 
     <ul className={menuStyles.contact}>

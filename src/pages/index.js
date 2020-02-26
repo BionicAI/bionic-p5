@@ -21,9 +21,7 @@ import Demo from "../components/specific/demo"
 // Load p5 safe
 import Loadable from "@loadable/component"
 // p5 sketches
-import TestSketch from '../p5-sketches/test-sketch'
 import BionicLogo from '../p5-sketches/bionic-logo'
-import PatternGrid from '../p5-sketches/pattern-grid'
 import Relevance from '../p5-sketches/relevance'
 import Speed from '../p5-sketches/speed'
 
@@ -41,10 +39,6 @@ export default () => (
       <Menu />
     </Header>
 
-    {/* Not needed yet
-    <P5Wrapper sketch={PatternGrid} />
-    */}
-
     <MainContainer 
       alternateText="-> Enterprise Search"
       headerText="Search with exceptional relevance and performance" 
@@ -52,20 +46,21 @@ export default () => (
       critical search system"
     />
     <Container 
-      headerText="Unique algorithms for unmatched search relevance"
+      headerText="Unique algorithms for outstanding search relevance"
       sketch={Relevance}
     >
+      <h3>Take the guesswork out of the equation</h3>
       <p style={{color: "white"}}>
         Bionic takes on a fundamentally different approach to searching, with Neural Network Vector models.
       </p>
       </Container>
 
 
-    <Soloheading flex="flex-end" text="Incredible index and response time"/>
+    <Soloheading flex="flex-end" text="Unmatched index and response time"/>
 
     <P5Wrapper sketch={Speed} />
     <Textbox>
-      <h1>Up to 1000 queries per second</h1>
+      <h1>Searches faster than 1.000 times per second</h1>
       <h1>More than 750.000 entries indexed per second</h1>
       <p>1.5 million entries indexes in ~20 seconds</p>
       <p>1ms response time on a single instance</p>

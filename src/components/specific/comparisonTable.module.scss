@@ -57,11 +57,75 @@
 
 
     } // spec
-    table {
+    .responsiveTable {
+        overflow-x:auto;
         margin-top: 120px;
-        margin-bottom: 120px;
+        margin-bottom: 60px;
+        p {
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            width: 100%;
+            text-align: right;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            @media (max-width: 768px){
+                //width: 768px;
+                text-align: left;
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+    table {
+        font-family: Arial, Helvetica, sans-serif;
         width: 100%;
         color: white;
+        border-collapse: collapse;
+        @media (max-width: 768px){
+            width: 768px;
+        }
+        tr {
+            height: 60px;
+            
+            th {
+                text-align: left;
+                border-bottom: 1px solid #1F2B4F;
+                padding: 10px;
+                padding-left: 0px;
+            }
+            td {
+                font-size: 16px;
+                border-bottom: 1px solid #1F2B4F;
+                width: 16.667%;
+                padding: 10px;
+                padding-left: 0px;
+                @media (max-width: 480px){
+                    font-size: 14px;
+                }
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    .firstRow {
+        th {
+            border-bottom: 1px solid white;
+        }
+    }
+
+    .bionicCell {
+        width: 25%;
+    }
+
+    .green {
+        color: #00FFB8;
+    }
+    .red {
+        color: #FF4D71;
     }
 
 } // wrapper

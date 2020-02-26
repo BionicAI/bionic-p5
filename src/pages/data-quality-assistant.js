@@ -34,8 +34,8 @@ export default () => (
 
         <MainContainer 
             alternateText="-> Data Quality Assistant"
-            headerText="Clean and categorize your data" 
-            subHeaderText="Clean data duplicates with our unique distance vectoring system"
+            headerText="Search is more than an input field" 
+            subHeaderText="Bionic Search System is excellent for recommendation software, data duplication control, generating metadata, pattern recognition, similarity search, language modeling, and more."
         >
         </MainContainer>  
 

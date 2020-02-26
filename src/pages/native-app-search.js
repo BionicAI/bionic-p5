@@ -35,7 +35,7 @@ export default () => (
         <MainContainer 
         alternateText="-> Native App Search"
         headerText="Bionic Search on iOS and Android" 
-        subHeaderText="Great search experiences for native apps"
+        subHeaderText="Single-file libraries for native apps. Installed in minutes."
         >
         </MainContainer>  
 

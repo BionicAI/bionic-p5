@@ -34,7 +34,7 @@ export default () => (
 
         <MainContainer 
         alternateText="-> Anti Money Laundry"
-        headerText="Extreme fault tolerance name search" 
+        headerText="Extreme fault tolerant name search" 
         subHeaderText="Bionic Anti Money Laundry comes pre-indexed with international sanctions lists"
         >
         </MainContainer>  

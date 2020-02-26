@@ -4,14 +4,16 @@ export default function sketch(p) {
     let midhoriz
     let midvert
 
-    var num = 50 // number of stars
+    var num = 50 // number of points
     var edge = 50 // pixels from the edge of the canvas
     var pointCollection = [] // array of points 
+
+    p.disableFriendlyErrors = true // disables FES
 
     p.setup = function() {
       //p.createCanvas(p.windowWidth, p.windowHeight)
       p.checkCanvas(p.windowWidth)
-      p.smooth()
+      //p.smooth()
       p.frameRate(60)
 
       p.createPoints()
@@ -25,12 +27,15 @@ export default function sketch(p) {
     p.createPoints = function() {
       pointCollection = []
       for (let i = 0; i < num; i++){
-        let org = p.createVector(p.random(edge, p.width-edge), p.random(edge, p.height-edge)) 
-        let radius = p.random(20, 60) 
+        //let org = p.createVector(p.random(edge, p.width - edge), p.random(edge, p.height-edge)) 
+        let org = p.createVector(Math.random() * ((p.width - edge) - edge) + edge, Math.random() * ((p.height - edge) - edge) + edge)
+        //let radius = p.random(20, 60) 
+        let radius = Math.random() * (60 - 20) + 20
         let loc = p.createVector(org.x+radius, org.y) 
-        let offSet = p.random(p.TWO_PI) 
+        //let offSet = p.random(p.TWO_PI) 
+        let offSet = Math.random() * p.TWO_PI
         let dir = 1 
-        let r = p.random(1) 
+        let r = Math.random() 
         if (r>.5) {
           dir =-1 
         }
@@ -53,14 +58,14 @@ export default function sketch(p) {
       }
       display = () => {
         for (let i=0; i<5; i++) {
-          p.strokeWeight(this.sz)
-          p.point(this.loc.x, this.loc.y)
-          //p.ellipse(this.loc.x, this.loc.y, this.sz, this.sz) 
+          //p.strokeWeight(this.sz)
+          //p.point(this.loc.x, this.loc.y)
+          p.ellipse(this.loc.x, this.loc.y, this.sz)
         }
       }
       move = () => {
-        this.loc.x = this.org.x + p.sin(this.theta+this.offSet)*this.radius 
-        this.loc.y = this.org.y + p.cos(this.theta+this.offSet)*this.radius 
+        this.loc.x = this.org.x + Math.sin(this.theta+this.offSet)*this.radius 
+        this.loc.y = this.org.y + Math.cos(this.theta+this.offSet)*this.radius 
         this.theta += (0.04/3*this.dir) 
       }
       line = () => {
@@ -68,25 +73,21 @@ export default function sketch(p) {
           let other = pointCollection[i] 
           var distance = this.loc.dist(other.loc) 
           var mousedist = p.dist(this.loc.x, this.loc.y, midhoriz, midvert) 
-
-          p.strokeWeight(1)
           
           // mouse line
           if (mousedist > 0 && mousedist < this.d * 4){
-            p.stroke(255,255,255) 
+            //p.stroke(255,255,255) 
             p.line(this.loc.x, this.loc.y, midhoriz, midvert) 
           }
           // between line
           if (distance >0 && distance < this.d) {
-            p.stroke(255,255,255,100) 
+            //p.stroke(255,255,255,100) 
             p.line(this.loc.x, this.loc.y, other.loc.x, other.loc.y) 
           }
         }
       }
       draw = () => {
-        p.strokeWeight(.5)
-        p.stroke(255)
-        p.fill(255)
+
 
         this.display()
         this.move()
@@ -100,6 +101,9 @@ export default function sketch(p) {
       p.background(0,10,30)
       p.noFill()
 
+      p.strokeWeight(.5)
+      p.stroke(255)
+      p.fill(255)
       for(let i = 0; i < pointCollection.length; i++){
         let currentPoint = pointCollection[i]
         currentPoint.draw()
@@ -121,6 +125,7 @@ export default function sketch(p) {
       }
     }
 
+    /*
     p.touchMoved = function() {
       if((p.mouseX > 0 && p.mouseX < p.width) && (p.mouseY > 0 && p.mouseY < p.height)){
         midhoriz = p.mouseX
@@ -135,9 +140,11 @@ export default function sketch(p) {
       midvert = p.height / 2
       midhoriz = p.width / 2
     }
+    */
 
     p.windowResized = function() {
-        p.checkCanvas(p.windowWidth) 
+        p.checkCanvas(p.windowWidth)
+        p.createPoints()
       }
 
     p.checkCanvas = function(w) {

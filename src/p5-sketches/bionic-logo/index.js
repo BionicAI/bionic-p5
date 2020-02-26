@@ -17,6 +17,9 @@ export default function mysketch(p) {
   let textChars = []
   let textHeight
   let logo
+  let fps = 20
+
+  p.disableFriendlyErrors = true // disables FES
 
   p.preload = function(){
     reg = p.loadFont('/static/reg-27b93a163e1b08ebf79f909765b7582e.otf')
@@ -26,7 +29,7 @@ export default function mysketch(p) {
   }
   p.setup = function() {
     p.createCanvas(150, 44)
-    p.frameRate(60)
+    p.frameRate(fps)
 
     bString = ['B', 'B']
     iString = ['i', 'ï', 'í', 'ĭ', 'ì', 'î', 'ĩ', 'ī', 'į', 'y']
@@ -43,7 +46,7 @@ export default function mysketch(p) {
 
   p.getMarkovChar = function(arr) {
     let threshold = 0.8
-    let passThreshold = p.random()
+    let passThreshold = Math.random()
     if (passThreshold > threshold) {
       return (parseInt(p.random(1,arr.length)))
     } else {
@@ -52,7 +55,7 @@ export default function mysketch(p) {
   }
   p.getMarkovFont = function() {
     let threshold = 0.8
-    let passThreshold = p.random()
+    let passThreshold = Math.random()
     if(passThreshold > threshold) {
       return (screen)
     } else {
@@ -61,7 +64,7 @@ export default function mysketch(p) {
   }
   p.getMarkovLogo = function() {
     let threshold = 0.8
-    let passThreshold = p.random()
+    let passThreshold = Math.random()
     if(passThreshold > threshold) {
       return screenlogo
     } else {
@@ -95,7 +98,7 @@ export default function mysketch(p) {
       p.text(bionicStrings[i][textChars[i]], charPositions[i], textHeight)
     }
     
-    if (p.frameCount % 60 == 0) {
+    if (p.frameCount % fps == 0) {
       p.calcSetup()
     }
   }

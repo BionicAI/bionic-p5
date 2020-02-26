@@ -25,6 +25,7 @@
         color: white;
         opacity: 0.75;
         max-width: 800px;
+        margin-bottom: 20px;
     }
     .split {
         width: 50%;
@@ -67,3 +68,17 @@
         } // feature section
     } // split
 } // fuzzy
+
+.relevancyRankImage {
+    //width: 41.667vw;
+    //height: 27.778vw;
+    width: 100%;
+    height: 400px;
+    background-size:contain;
+    background-position:center;
+    background-image: url(../../../assets/img/relevancyranking.svg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

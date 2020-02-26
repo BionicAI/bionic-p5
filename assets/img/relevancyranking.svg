@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="22.0901044%" x2="0%" y2="77.9098956%" id="linearGradient-1">
+            <stop stop-color="#0047FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="49.9745605%" x2="0%" y2="50.0254395%" id="linearGradient-2">
+            <stop stop-color="#00FFAB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#00FFAB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#00FFAB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="57.9441537%" x2="0%" y2="42.0558463%" id="linearGradient-5">
+            <stop stop-color="#00FBFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="63.0154102%" x2="100%" y2="37.8847696%" id="linearGradient-6">
+            <stop stop-color="#00FBFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="83.0755556%" y1="100%" x2="21.6800494%" y2="5.86242676%" id="linearGradient-7">
+            <stop stop-color="#0047FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <line x1="256" y1="218" x2="430" y2="88" id="Line-10" stroke="url(#linearGradient-1)" opacity="0.5" stroke-linecap="square"></line>
+        <line x1="256" y1="218" x2="389" y2="215" id="Line-10" stroke="url(#linearGradient-2)" opacity="0.5" stroke-linecap="square"></line>
+        <line x1="256" y1="218" x2="247.5" y2="139.5" id="Line-10" stroke="url(#linearGradient-3)" opacity="0.5" stroke-linecap="square"></line>
+        <line x1="256" y1="218" x2="147" y2="222" id="Line-10" stroke="url(#linearGradient-4)" opacity="0.5" stroke-linecap="square"></line>
+        <line x1="256" y1="218" x2="399" y2="275" id="Line-10" stroke="url(#linearGradient-5)" opacity="0.5" stroke-linecap="square"></line>
+        <line x1="256" y1="218" x2="109" y2="293" id="Line-10" stroke="url(#linearGradient-6)" opacity="0.5" stroke-linecap="square"></line>
+        <line x1="256" y1="218" x2="317" y2="293" id="Line-10" stroke="url(#linearGradient-7)" opacity="0.5" stroke-linecap="square"></line>
+        <rect id="Rectangle" stroke="#FFFFFF" fill="#050F2D" x="192" y="204" width="128" height="36" rx="8"></rect>
+        <text id="Search-string" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="205" y="227">Search string</tspan>
+        </text>
+        <text id="e-arch-strrng" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="378" y="73">e arch strrng</tspan>
+        </text>
+        <text id="string" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="88" y="224">string</tspan>
+        </text>
+        <text id="search" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="398" y="215">search</tspan>
+        </text>
+        <text id="strings-and-searches" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="166" y="120">strings and searches</tspan>
+        </text>
+        <text id="str-ngs-and-se.arche" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="411" y="279">str-ngs and se.arches</tspan>
+        </text>
+        <text id="arches-or-strings?" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="22" y="318">arches or strings?</tspan>
+        </text>
+        <text id="ztring-searzh" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="266" y="315">ztring searzh</tspan>
+        </text>
+        <text id="Distance-0.55" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="396" y="54">Distance 0.55</tspan>
+        </text>
+        <text id="Distance-0.95" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="211" y="100">Distance 0.95</tspan>
+        </text>
+        <text id="Distance-0.9" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="399" y="229">Distance 0.9</tspan>
+        </text>
+        <text id="Distance-0.72" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="415" y="297">Distance 0.72</tspan>
+        </text>
+        <text id="Distance-0.89" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="63" y="241">Distance 0.89</tspan>
+        </text>
+        <text id="Distance-0.68" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="63" y="337">Distance 0.68</tspan>
+        </text>
+        <text id="Distance-0.82" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="284" y="336">Distance 0.82</tspan>
+        </text>
+        <ellipse id="Oval" fill="#0047FF" cx="429.5" cy="88" rx="3.5" ry="3"></ellipse>
+        <ellipse id="Oval" fill="#00FFAB" cx="387.5" cy="214" rx="3.5" ry="3"></ellipse>
+        <ellipse id="Oval" fill="#00FFAB" cx="146.5" cy="222" rx="3.5" ry="4"></ellipse>
+        <circle id="Oval" fill="#00FFAB" cx="246" cy="139" r="4"></circle>
+        <ellipse id="Oval" fill="#00FBFF" cx="399.5" cy="275" rx="3.5" ry="4"></ellipse>
+        <ellipse id="Oval" fill="#00FBFF" cx="108" cy="292" rx="3" ry="4"></ellipse>
+        <ellipse id="Oval" fill="#0047FF" cx="316.5" cy="292" rx="3.5" ry="4"></ellipse>
+        <rect id="Rectangle" fill="#FFFFFF" x="303" y="212" width="2" height="21"></rect>
+    </g>
+</svg>

@@ -27,12 +27,12 @@ export default props => (
 
             <SpecBox>
                 <h2>Vastly lower CPU usage</h2>
-                <p>Keep running cost low with modern and lightweight software</p>
+                <p>Keep running cost low with our modern and lightweight software</p>
             </SpecBox>
 
             <SpecBox>
                 <h2>No spelling error limits</h2>
-                <p>Virtually unlimited faulty characters, compared to max 2 in other systems</p>
+                <p>Virtually unlimited faulty characters, in contrast to maximum 2 in other systems</p>
             </SpecBox>
 
         </Spec>

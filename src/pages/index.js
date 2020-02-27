@@ -51,7 +51,7 @@ export default () => (
     >
       <h3>Take the guesswork out of the equation</h3>
       <p style={{color: "white"}}>
-        Bionic takes on a fundamentally different approach to searching, with Neural Network Vector models.
+        Bionic introduces a new approach to search. With our neural network vector models we take the guesswork out of the equation.
       </p>
       </Container>
 
@@ -60,10 +60,11 @@ export default () => (
 
     <P5Wrapper sketch={Speed} />
     <Textbox>
-      <h1>Searches faster than 1.000 times per second</h1>
-      <h1>More than 750.000 entries indexed per second</h1>
+      {/*<h1>> 1.000 searches per second</h1>
+      <h1>> 750.000 entries indexed per second</h1>*/}
+      <h1>We offer the world's fastest search engine, with more than 1.000 search queries per second and an indexing speed of more than 750.000 per second.</h1>
       <p>1.5 million entries indexes in ~20 seconds</p>
-      <p>1ms response time on a single instance</p>
+      <p>1 ms response time on one single instance</p>
     </Textbox>
     
 

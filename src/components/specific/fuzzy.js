@@ -26,9 +26,8 @@ export default props => (
 
             <SplitSection bgColor="#050F2D">
                 <h1>Not yet another fuzzy matcher</h1>
-                <h2>Bionic Relevancy Ranking™ algorithms brings spelling tolerance to a new level</h2>
-                <p>Bionics Neural Network Vector measuring is a fundamentally different approach to searching. Bionic matches the entire search string with every indexed reference, and not just recognised words or predefined patterns.</p>
-                <p>Your users will rarely know the data they are searching in. Other search engines will look for complete and recognized words, and hide all entries of its next-best guess. Bionic Search will not actively choose the search results presented to the user.</p>
+                <h2>Bionic's Relevancy Ranking™ algorithm features unprecedented spelling error tolerance</h2>
+                <p>Bionic's neural network measures the mathematical distance between search strings, and matches the entire search string with each indexed reference. In contrast to our competitors, Bionic's relevancy ranking works without narrowing the users search range.</p>
                 
                 <FeatureSection>
 
@@ -43,13 +42,13 @@ export default props => (
                     </FeatureList>
 
                     <FeatureList>
-                        <h3>Empowers the user with true autocomplete</h3>
-                        <p>Relevancy Ranking allows for spelling errors without narrowing the users field of view</p>
+                        <h3>True autocomplete</h3>
+                        <p>Real-time search results without using a 'Did you mean?' function</p>
                     </FeatureList>
 
                     <FeatureList>
                         <h3>Language agnostic semantic search capabilities</h3>
-                        <p>Indexing identifies common phrases such as 'the', and identifies stemming without dictionary data</p>
+                        <p>Smart indexing identifies common phrases such as 'the', and supports word stemming without dictionary data</p>
                     </FeatureList>
 
                 </FeatureSection>

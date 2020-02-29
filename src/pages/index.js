@@ -60,9 +60,7 @@ export default () => (
 
     <P5Wrapper sketch={Speed} />
     <Textbox>
-      {/*<h1>> 1.000 searches per second</h1>
-      <h1>> 750.000 entries indexed per second</h1>*/}
-      <h1>We offer the world's fastest search engine, with more than 1.000 search queries per second and an indexing speed of more than 750.000 per second.</h1>
+      <h1>We offer the world's fastest search engine, with more than 1.000 search queries per second and an indexing speed of more than 750.000 entries per second.</h1>
       <p>1.5 million entries indexes in ~20 seconds</p>
       <p>1 ms response time on one single instance</p>
     </Textbox>

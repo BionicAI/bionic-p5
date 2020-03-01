@@ -15,7 +15,7 @@ import Textbox from "../components/textbox"
 // Specific Components
 import Fuzzy from "../components/specific/fuzzy"
 import Features from "../components/specific/features"
-import ComparisonTable from "../components/specific/comparisonTable"
+import ComparisonTable from "../components/specific/comparison-table"
 import Demo from "../components/specific/demo"
 
 // Load p5 safe

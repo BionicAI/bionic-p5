@@ -87,13 +87,13 @@
         <text id="Distance-0.82" opacity="0.5" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#FFFFFF">
             <tspan x="284" y="336">Distance 0.82</tspan>
         </text>
-        <ellipse id="Oval" fill="#0047FF" cx="429.5" cy="88" rx="3.5" ry="3"></ellipse>
-        <ellipse id="Oval" fill="#00FFAB" cx="387.5" cy="214" rx="3.5" ry="3"></ellipse>
-        <ellipse id="Oval" fill="#00FFAB" cx="146.5" cy="222" rx="3.5" ry="4"></ellipse>
-        <circle id="Oval" fill="#00FFAB" cx="246" cy="139" r="4"></circle>
-        <ellipse id="Oval" fill="#00FBFF" cx="399.5" cy="275" rx="3.5" ry="4"></ellipse>
-        <ellipse id="Oval" fill="#00FBFF" cx="108" cy="292" rx="3" ry="4"></ellipse>
-        <ellipse id="Oval" fill="#0047FF" cx="316.5" cy="292" rx="3.5" ry="4"></ellipse>
+        <circle id="Oval" fill="#0047FF" cx="430" cy="88" r="4"></circle>
+        <circle id="Oval" fill="#00FFAB" cx="388" cy="215" r="4"></circle>
+        <circle id="Oval" fill="#00FFAB" cx="147" cy="222" r="4"></circle>
+        <circle id="Oval" fill="#00FFAB" cx="247" cy="139" r="4"></circle>
+        <circle id="Oval" fill="#00FBFF" cx="400" cy="275" r="4"></circle>
+        <circle id="Oval" fill="#00FBFF" cx="109" cy="292" r="4"></circle>
+        <circle id="Oval" fill="#0047FF" cx="317" cy="292" r="4"></circle>
         <rect id="Rectangle" fill="#FFFFFF" x="303" y="212" width="2" height="21"></rect>
     </g>
 </svg>

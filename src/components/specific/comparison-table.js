@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "./comparisonTable.module.scss"
+import styles from "./comparison-table.module.scss"
 
 const Spec = props => (
     <div className={styles.spec}>{props.children}</div>

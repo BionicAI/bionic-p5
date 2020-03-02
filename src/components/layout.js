@@ -24,6 +24,7 @@ const Layout = ({ children }) => (
       <meta name="twitter:image" content="https://bionic-p5.andersnaero.now.sh/opengraph.png" />
       
       {/*<meta property="og:url" content="https://bionic.as" />*/}
+      {/* YOLO */}
       <link rel="icon" href={favicon} />
     </Helmet>
     {children}

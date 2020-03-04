@@ -45,7 +45,7 @@ export default () => (
                 <div style={{margin: '0 auto', marginBottom: '-250px', textAlign: "center", maxWidth: '600px'}}>
                     <BetaBadge>Pre-release software</BetaBadge> 
                     <h3>Bionic is currently building this solution, and we are actively seeking business partners within the financing and compliance market</h3>
-                    <h3>Please <Link to='/contact'>Contact</Link> us for more information on the development of this product</h3>
+                    <h3>Please <Link to='/contact'>contact</Link> us for more information on the development of this product</h3>
                 </div>
             </Textbox>
         </MainContainer>  

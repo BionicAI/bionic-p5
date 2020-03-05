@@ -14,7 +14,8 @@
   "dependencies": {
     "@loadable/component": "^5.12.0",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.19.23",
+    "core-js": "^3.6.4",
+    "gatsby": "^2.19.28",
     "gatsby-plugin-google-analytics": "^2.1.36",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sass": "^2.1.29",

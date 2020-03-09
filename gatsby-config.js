@@ -1,6 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: `Bionic`,
+    siteUrl: `https://bionicsearch.net`,
+    description: `Bionic - A new approach to search`,
+  },
   pathPrefix: '/',
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`,
+  plugins: [`gatsby-plugin-react-helmet`,
   {
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -21,6 +26,7 @@ module.exports = {
       trackingId: "UA-115175787-1",
     },
   },
+  `gatsby-plugin-sass`, 
 ],
 }
 
